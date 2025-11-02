@@ -17,10 +17,10 @@ All colors MUST be HSL.
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 185 100% 57%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 270 70% 60%;
+    --secondary: 270 70% 65%;
     --secondary-foreground: 0 0% 100%;
 
     --accent: 25 95% 53%;
@@ -34,19 +34,25 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 217 91% 60%;
+    --ring: 185 100% 57%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(270 70% 60%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(270 70% 60%) 0%, hsl(25 95% 53%) 100%);
-    --gradient-glow: radial-gradient(circle at center, hsl(217 91% 60% / 0.3) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(185 100% 57%) 0%, hsl(270 70% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(270 70% 65%) 0%, hsl(25 95% 53%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(185 100% 57% / 0.3) 0%, transparent 70%);
     
-    --glow-primary: 0 0 40px hsl(217 91% 60% / 0.5);
-    --glow-secondary: 0 0 40px hsl(270 70% 60% / 0.5);
+    --glow-primary: 0 0 40px hsl(185 100% 57% / 0.5);
+    --glow-secondary: 0 0 40px hsl(270 70% 65% / 0.5);
     --glow-accent: 0 0 40px hsl(25 95% 53% / 0.5);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --text-cyan: 185 100% 57%;
+    --text-purple: 270 70% 65%;
+    --text-orange: 25 95% 53%;
+    --text-yellow: 45 100% 50%;
+    --text-red: 0 100% 60%;
   }
 }
 
