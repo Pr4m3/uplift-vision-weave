@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Scene3D from "./components/3d/Scene3D";
+import AIChat from "./components/AIChat";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
@@ -23,6 +24,7 @@ const App = () => (
         <div className="relative min-h-screen">
           <Scene3D />
           <Navigation />
+          <AIChat />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
