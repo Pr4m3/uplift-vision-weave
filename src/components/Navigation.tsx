@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/uplyft-logo.jpg";
 
 const Navigation = () => {
   const location = useLocation();
@@ -21,13 +22,8 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow-primary">
-              <span className="text-2xl font-bold">U</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Uplyft
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Uplyft" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,9 +44,11 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
-            <Button variant="default" className="bg-gradient-primary hover:shadow-glow-primary">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button variant="default" className="bg-gradient-primary hover:shadow-glow-primary">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,9 +77,11 @@ const Navigation = () => {
                 {link.label}
               </Link>
             ))}
-            <Button className="w-full bg-gradient-primary hover:shadow-glow-primary">
-              Get Started
-            </Button>
+            <Link to="/contact" className="w-full">
+              <Button className="w-full bg-gradient-primary hover:shadow-glow-primary">
+                Get Started
+              </Button>
+            </Link>
           </div>
         )}
       </div>

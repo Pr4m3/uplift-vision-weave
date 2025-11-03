@@ -5,10 +5,10 @@ import GlobeIcon from "@/components/GlobeIcon";
 
 const About = () => {
   const stats = [
-    { label: "Projects Delivered", value: "500+" },
-    { label: "Happy Clients", value: "200+" },
-    { label: "Team Members", value: "50+" },
-    { label: "Countries Served", value: "25+" },
+    { label: "Projects Delivered", value: "50+" },
+    { label: "Happy Clients", value: "30+" },
+    { label: "Team Members", value: "10+" },
+    { label: "Year Strong", value: "1" },
   ];
 
   const values = [
@@ -35,21 +35,16 @@ const About = () => {
   ];
 
   const team = [
-    { role: "Engineers", count: 30, icon: Code },
-    { role: "Designers", count: 8, icon: Globe },
-    { role: "Product Managers", count: 5, icon: Target },
-    { role: "DevOps", count: 7, icon: Rocket },
+    { role: "Engineers", count: 6, icon: Code },
+    { role: "Designers", count: 2, icon: Globe },
+    { role: "Product Managers", count: 1, icon: Target },
+    { role: "DevOps", count: 1, icon: Rocket },
   ];
 
   const milestones = [
-    { year: "2018", event: "Uplyft Founded", description: "Started with a vision to bridge technology gaps" },
-    { year: "2019", event: "First Major Client", description: "Delivered enterprise solution for Fortune 500 company" },
-    { year: "2020", event: "Global Expansion", description: "Opened offices in 3 new countries" },
-    { year: "2021", event: "AI Lab Launch", description: "Established dedicated AI research and development team" },
-    { year: "2022", event: "500+ Projects", description: "Reached major milestone in project deliveries" },
-    { year: "2023", event: "Industry Recognition", description: "Awarded Top Software Development Company" },
-    { year: "2024", event: "Innovation Hub", description: "Launched internship program and startup incubator" },
-    { year: "2025", event: "Future Forward", description: "Expanding into emerging technologies and markets" },
+    { year: "2025", event: "Uplyft Founded", description: "Born from a vision to uplift the Lebanese software market" },
+    { year: "2025", event: "Speed Internship Program", description: "Launched intensive program to train the next generation of developers" },
+    { year: "Future", event: "Future Forward", description: "Continuing to build production-grade solutions and empower talent" },
   ];
 
   return (
@@ -100,16 +95,16 @@ const About = () => {
                 <h2 className="text-4xl font-bold mb-8 text-purple">Our Story</h2>
                 <div className="space-y-6 text-muted-foreground text-lg">
                   <p>
-                    Founded in 2018, <span className="text-cyan font-semibold">Uplyft</span> emerged from a simple vision: to bridge the gap between cutting-edge technology and real-world business challenges. Our founders, seasoned software engineers with decades of combined experience, recognized that many businesses struggled to leverage modern technology effectively.
+                    Founded in 2025, <span className="text-cyan font-semibold">Uplyft</span> emerged from a vision to uplift the Lebanese software market. Our founders noticed a gap in the quality of software development and took matters into their own hands—reaching out to the best talent in their network and mapping out a mission, vision, and goals to transform the industry.
                   </p>
                   <p>
-                    What started as a small team of five passionate developers has grown into a thriving company of over 50 talented professionals. We've expanded across continents, opened offices in multiple countries, and delivered solutions that have impacted millions of users worldwide.
+                    We specialize in building <span className="text-orange font-semibold">production-grade web and mobile solutions</span>, e-commerce websites, automations, and ERPs, delivered by agile teams with long-term support. Our approach is noted for a strong UX focus, offering UX consultations, and for owning products from <span className="text-purple font-semibold">0 to 1</span> (idea → launch) and from <span className="text-cyan font-semibold">1 to ∞</span> (scaling, road-mapping, and continual improvement).
                   </p>
                   <p>
-                    Today, we're proud to be more than just a software development company. We're innovation partners, problem solvers, and change makers. We've successfully completed over <span className="text-orange font-semibold">500 projects</span> across diverse industries including finance, healthcare, e-commerce, education, and more.
+                    Whether through <span className="text-purple font-semibold">product ownership</span>, <span className="text-cyan font-semibold">UX consultations</span>, or <span className="text-orange font-semibold">revamping and boosting user experiences</span>, our work serves both internal operations and public platforms with real user bases that struggle to translate their missions into clear, actionable objectives through their platforms.
                   </p>
-                  <p>
-                    What sets us apart is our unwavering commitment to not just building software, but building relationships. We take the time to understand your business, your challenges, and your goals. Then we craft solutions that don't just meet requirements—they exceed expectations and drive measurable results.
+                  <p className="text-cyan italic">
+                    — often attributive ("an Uplyft build," "Uplyft standards")
                   </p>
                 </div>
               </div>
@@ -125,7 +120,7 @@ const About = () => {
                 <Target className="w-16 h-16 text-cyan mb-6" />
                 <h3 className="text-3xl font-bold mb-4 text-cyan">Our Mission</h3>
                 <p className="text-muted-foreground text-lg">
-                  To empower businesses worldwide with innovative software solutions that drive growth, efficiency, and competitive advantage in the digital age.
+                  To uplift the Lebanese software market by delivering production-grade solutions with a strong UX focus, owning products from idea to launch and beyond, helping businesses translate their missions into clear, actionable objectives.
                 </p>
               </div>
             </ScrollReveal>
@@ -134,7 +129,7 @@ const About = () => {
                 <Rocket className="w-16 h-16 text-purple mb-6" />
                 <h3 className="text-3xl font-bold mb-4 text-purple">Our Vision</h3>
                 <p className="text-muted-foreground text-lg">
-                  To be the global leader in innovative software development, recognized for excellence, integrity, and transformative impact on businesses and society.
+                  To be recognized for "Uplyft standards" – synonymous with exceptional quality, transforming how businesses approach software development through product ownership, UX excellence, and continuous improvement.
                 </p>
               </div>
             </ScrollReveal>

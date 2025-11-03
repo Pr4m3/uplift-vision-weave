@@ -57,10 +57,10 @@ const Home = () => {
   ];
 
   const achievements = [
-    { number: "500+", label: "Projects Delivered", icon: Rocket },
-    { number: "200+", label: "Happy Clients", icon: Users },
+    { number: "50+", label: "Projects Delivered", icon: Rocket },
+    { number: "30+", label: "Happy Clients", icon: Users },
     { number: "98%", label: "Success Rate", icon: Trophy },
-    { number: "25+", label: "Countries", icon: Globe },
+    { number: "1", label: "Year Strong", icon: Globe },
   ];
 
   return (
@@ -161,9 +161,6 @@ const Home = () => {
                 <br />
                 <span className="text-cyan">Internship Program</span>
               </h2>
-              <p className="text-xl text-muted-foreground italic">
-                (Your great grandma can use, to build web apps)
-              </p>
             </div>
           </ScrollReveal>
 
@@ -171,7 +168,8 @@ const Home = () => {
             <div className="max-w-4xl mx-auto bg-card/50 backdrop-blur border border-border rounded-3xl p-12 mb-12">
               <p className="text-lg text-muted-foreground mb-8">
                 Join our intensive internship program designed to transform aspiring developers into industry-ready professionals. 
-                Choose your track, learn from real projects, and build a portfolio that stands out.
+                Master production-grade web and mobile solutions, e-commerce, automations, and ERPs with long-term support.
+                Learn from real projects and build a portfolio that stands out.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <span className="px-6 py-2 bg-cyan/20 border border-cyan rounded-full text-cyan">Fast-Track Learning</span>
@@ -228,28 +226,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Technologies Section */}
-      <section className="py-32 relative">
-        <div className="container mx-auto px-4">
-          <ScrollReveal animation="fade-slide">
-            <h2 className="text-5xl md:text-6xl font-bold text-center mb-16">
-              <span className="text-cyan">7 Vibe</span> <span className="text-purple">Coding</span> <span className="text-white">Tools</span>
-            </h2>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {technologies.map((tech, index) => (
-              <ScrollReveal key={index} animation="scale" delay={index * 0.1}>
-                <div className="bg-card/50 backdrop-blur border border-border rounded-xl p-6 hover:border-purple transition-all text-center group">
-                  <Code className="w-12 h-12 mx-auto mb-4 text-cyan group-hover:text-purple transition-colors" />
-                  <h4 className="font-bold text-lg mb-1">{tech.name}</h4>
-                  <p className="text-sm text-muted-foreground">{tech.category}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
       <section className="py-32 bg-card/30">
