@@ -1,4 +1,6 @@
 import { Users, Target, Zap, Award, Rocket, Heart, Code, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import DecorativeArrow from "@/components/DecorativeArrow";
 import GlobeIcon from "@/components/GlobeIcon";
@@ -227,9 +229,11 @@ const About = () => {
             <p className="text-muted-foreground mb-8">
               We're always looking for talented individuals who share our passion for technology and innovation
             </p>
-            <button className="px-8 py-3 bg-gradient-accent rounded-lg font-semibold hover:shadow-glow-accent transition-all">
-              View Open Positions
-            </button>
+            <Link to="/careers#positions">
+              <Button className="px-8 py-3 bg-gradient-accent hover:shadow-glow-accent">
+                View Open Positions
+              </Button>
+            </Link>
           </div>
         </ScrollReveal>
       </div>
