@@ -162,7 +162,7 @@ const Careers = () => {
                         </span>
                       </div>
                     </div>
-                    <Link to="/contact">
+                    <Link to="/apply">
                       <Button className="bg-gradient-primary hover:shadow-glow-primary">
                         Apply Now
                         <ArrowRight className="ml-2 w-4 h-4" />
@@ -221,7 +221,7 @@ const Careers = () => {
               <p className="text-lg text-orange mb-6 font-medium">
                 NOTE: The developer with the nicest design wins an internship in that domain
               </p>
-              <Link to="/contact">
+              <Link to="/apply">
                 <Button className="bg-gradient-accent hover:shadow-glow-accent text-lg px-8 py-6">
                   Apply for Internship
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -269,7 +269,7 @@ const Careers = () => {
                 <p className="text-xl text-muted-foreground mb-8">
                   Don't see a position that fits? Send us your resume anyway—we're always looking for exceptional talent
                 </p>
-                <Link to="/contact">
+                <Link to="/apply">
                   <Button className="bg-gradient-accent hover:shadow-glow-accent text-lg px-8 py-6">
                     Get in Touch
                     <ArrowRight className="ml-2 w-5 h-5" />
