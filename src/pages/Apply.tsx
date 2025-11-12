@@ -47,7 +47,16 @@ const Apply = () => {
   useEffect(() => {
     const positionParam = searchParams.get("position");
     if (positionParam) {
-      form.setValue("position", positionParam);
+      // Map URL slugs to form values
+      const positionMap: Record<string, string> = {
+        "senior-full-stack-developer": "senior-fullstack",
+        "ux/ui-designer": "ux-ui-designer",
+        "product-manager": "product-manager",
+        "devops-engineer": "devops-engineer",
+      };
+      
+      const mappedPosition = positionMap[positionParam] || positionParam;
+      form.setValue("position", mappedPosition);
     }
   }, [searchParams, form]);
 
