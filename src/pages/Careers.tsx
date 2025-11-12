@@ -127,7 +127,7 @@ const Careers = () => {
       </section>
 
       {/* Open Positions */}
-      <section className="py-20 bg-card/30">
+      <section id="positions" className="py-20 bg-card/30">
         <div className="container mx-auto px-4">
           <ScrollReveal animation="fade-slide">
             <div className="text-center mb-16">
@@ -162,7 +162,7 @@ const Careers = () => {
                         </span>
                       </div>
                     </div>
-                    <Link to="/apply">
+                    <Link to={`/apply?position=${encodeURIComponent(position.title.toLowerCase().replace(/\s+/g, '-'))}`}>
                       <Button className="bg-gradient-primary hover:shadow-glow-primary">
                         Apply Now
                         <ArrowRight className="ml-2 w-4 h-4" />

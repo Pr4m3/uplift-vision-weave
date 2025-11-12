@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -25,6 +26,7 @@ const formSchema = z.object({
 
 const Apply = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [searchParams] = useSearchParams();
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -41,6 +43,13 @@ const Apply = () => {
       coverLetter: "",
     },
   });
+
+  useEffect(() => {
+    const positionParam = searchParams.get("position");
+    if (positionParam) {
+      form.setValue("position", positionParam);
+    }
+  }, [searchParams, form]);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
