@@ -1,5 +1,7 @@
 import { Code2, Brain, Smartphone, Cloud, Shield, Rocket, Palette, Database, Zap, Users, Globe, Award } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import DecorativeArrow from "@/components/DecorativeArrow";
 
@@ -240,9 +242,11 @@ const Services = () => {
               <p className="text-muted-foreground mb-8">
                 Let's discuss how our services can help you achieve your goals
               </p>
-              <button className="px-8 py-3 bg-gradient-primary text-black rounded-lg font-semibold hover:shadow-glow-primary transition-all">
-                Schedule a Consultation
-              </button>
+              <Link to="/book-consultation">
+                <Button className="px-8 py-3 bg-gradient-primary hover:shadow-glow-primary text-lg">
+                  Schedule a Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </ScrollReveal>
