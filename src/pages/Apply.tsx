@@ -179,30 +179,30 @@ const Apply = () => {
                     control={form.control}
                     name="position"
                     render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="flex items-center gap-2">
-                          <FileText className="w-4 h-4" />
-                          Position *
-                        </FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
-                          <FormControl>
-                            <SelectTrigger>
-                              <SelectValue placeholder="Select a position" />
-                            </SelectTrigger>
-                          </FormControl>
-                          <SelectContent>
-                            <SelectItem value="senior-fullstack">Senior Full Stack Developer</SelectItem>
-                            <SelectItem value="ux-ui-designer">UX/UI Designer</SelectItem>
-                            <SelectItem value="product-manager">Product Manager</SelectItem>
-                            <SelectItem value="devops-engineer">DevOps Engineer</SelectItem>
-                            <SelectItem value="internship-web">Speed Internship - Web Development</SelectItem>
-                            <SelectItem value="internship-mobile">Speed Internship - Mobile Development</SelectItem>
-                            <SelectItem value="internship-social">Speed Internship - Social Media</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                        <FormMessage />
-                      </FormItem>
+                  <FormItem>
+                    <FormLabel className="flex items-center gap-2">
+                      <FileText className="w-4 h-4" />
+                      Position *
+                    </FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select a position" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="senior-fullstack">Senior Full Stack Developer</SelectItem>
+                        <SelectItem value="ux-ui-designer">UX/UI Designer</SelectItem>
+                        <SelectItem value="product-manager">Product Manager</SelectItem>
+                        <SelectItem value="devops-engineer">DevOps Engineer</SelectItem>
+                        <SelectItem value="internship-web">Speed Internship - Web Development</SelectItem>
+                        <SelectItem value="internship-mobile">Speed Internship - Mobile Development</SelectItem>
+                        <SelectItem value="internship-social">Speed Internship - Social Media</SelectItem>
+                        <SelectItem value="other">Other</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
                     )}
                   />
                 </div>
